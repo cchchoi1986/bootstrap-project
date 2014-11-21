@@ -1,1 +1,39 @@
-/* You can include your custom styling here */
+section {
+  background: #EEE;
+}
+
+.ccc-written-by {
+  color: #5533CC;
+  font-size: 120%;
+}
+
+.ccc-author {
+  color: orange;
+  font: bold;
+  font-weight: bolder;
+  font-size: 100%;
+}
+
+.news-headings {
+  color: black;
+  font-size: 160%;
+  font-family: Arial;
+}
+
+.top-news {
+  font-size: 200%;
+  color:black;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.top-news:hover, .news-headings:hover{
+  color: orange;
+  text-decoration: none;
+}
+
+.ccc-main {
+  border: 0.5px solid black;
+  background: white;
+  /*margin: 50px 0 0 0;*/
+}
