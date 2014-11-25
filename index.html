@@ -22,7 +22,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top ccc-navbar" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top ccc-navbar ccc-no-margins" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -38,21 +38,22 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">BLOG<span class="sr-only">(current)</span></a></li>
+            <li class="active ccc-active"><a href="#">BLOG<span class="sr-only">(current)</span></a></li>
             <li><a href="#">CONFERENCE</a></li>
             <li><a href="#">DEALS</a></li>
             <li><a href="#">PRO</a></li>
           </ul>
           
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right row">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FOLLOW <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+              <a href="#" class="dropdown-toggle col-xs-12" data-toggle="dropdown" role="button" aria-expanded="false">FOLLOW <span class="caret"></span></a>
+              <ul class="dropdown-menu ccc-followdrop" role="menu">
+                <div class="ccc-no-margins glyphicon glyphicon-book ccc-glyph col-xs-4"><a href="#">Facebook</a></div>
+                <li class="col-xs-4"><a href="#">Twitter</a></li>
+                <li class="col-xs-4"><a href="#">Google+</a></li>
+                <li class="col-xs-4"><a href="#">Youtube</a></li>
+                <li class="col-xs-4"><a href="#">LinkedIn</a></li>
+                <li class="col-xs-4"><a href="#">Pinterest</a></li>
               </ul>
             </li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
@@ -74,11 +75,13 @@
       <div class="row">
 
 
-<!-- side nav -->
-        <div class="col-lg-3 sidebar visible-lg">
+<!-- fixed side nav -->
+        <div class="sidebar visible-lg ccc-sidenav"> 
+          
+
           <div class="btn-group col-lg-12">
-            <button type="button" class="btn btn-default dropdown-toggle ccc-allchannels-button btn-lg" data-toggle="dropdown" aria-expanded="false" width="100%">
-              ALL CHANNELS <span class="caret"></span>
+            <button type="button" class="btn btn-default dropdown-toggle col-lg-12 ccc-allchannels-button btn-lg" data-toggle="dropdown" aria-expanded="false" width="100%">
+              ALL CHANNELS <span class="caret ccc-caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Action</a></li>
@@ -88,49 +91,63 @@
               <li><a href="#">Separated link</a></li>
             </ul>
           </div>
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default glyphicon glyphicon-time">LATEST</button>
+
+          <div class="btn-group btn-group-justified col-lg-12" role="group" aria-label="...">
+            <div class="btn-group col-lg-6 ccc-no-margins" role="group">
+              <button type="button" class="btn btn-default glyphicon glyphicon-time ccc-twobuttons">LATEST</button>
             </div>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default glyphicon glyphicon-fire">POPULAR</button>
+            <div class="btn-group col-lg-6 ccc-no-margins" role="group">
+              <button type="button" class="btn btn-default glyphicon glyphicon-fire ccc-twobuttons">POPULAR</button>
             </div>
           </div>
+
+          <div class="ccc-sidenav-border" width:"100%"></div>
+          
+          <a class="ccc-sidenav-article ccc-no-margins col-lg-12" href="" width:"100%">
+            <img class="ccc-sidenav-article-pic ccc-no-margins col-lg-4" src="images/sidebar/kits-and-themese-feat-60x50.jpg">
+            <div class=" col-lg-8"><p class="ccc-sidenav-article-title">91% off a Lifetime Of Premium UI Kits & Design Resourcs</p></div>
+          </a>
+          <a class="ccc-sidenav-article ccc-no-margins col-lg-12" href="" width:"100%">
+            <img class="ccc-sidenav-article-pic ccc-no-margins col-lg-4" src="images/sidebar/Square-Reader-60x50.jpg">
+            <div class=" col-lg-8"><p class="ccc-sidenav-article-title">Square Takes Its Register Software Platform Worldwide</p></div>
+          </a>
+          <a class="ccc-sidenav-article ccc-no-margins col-lg-12" href="" width:"100%">
+            <img class="ccc-sidenav-article-pic ccc-no-margins col-lg-4" src="images/sidebar/well-dressed-man-in-coat-60x50.jpg">
+            <div class=" col-lg-8"><p class="ccc-sidenav-article-title">The Weird Science of First Impressions</p></div>
+          </a>
+          <a class="ccc-sidenav-article ccc-no-margins col-lg-12" href="" width:"100%">
+            <img class="ccc-sidenav-article-pic ccc-no-margins col-lg-4" src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+            <div class=" col-lg-8"><p class="ccc-sidenav-article-title">Print Photos on Your Adidas Sneakers. Why not?</p></div>
+          </a>
         </div>
         
 <!-- article header -->
-        <div class="col-xs-offset-1 col-xs-10 main"></div>
-<!-- articles -->
-        <div class="col-xs-offset-1 col-xs-10 main ccc-main col-lg-7 col-lg-offset-4">
-          <div class="ccc-toparticle col-xs-12 col-sm-8 col-md-8">
-            <a href=""><img src="/images/main/Square-Reader-520x245.jpg" width="100%"></a>
-            <p class="ccc-written-by">By <a class="ccc-author" href="">BEN WOODS</a> -- 20 Nov'14</p>
-            <a class="top-news" href="#">Square officially launches its Register software platform worldwide</a>
-            <p class="ccc-article-color">Square has today announced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan.  Announced at The Financial.... <a href="">Keep reading -></a></p>
-          </div>
-
-          <div class="ccc-sidearticle col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div>
-              <a href=""><img src="/images/main/well-dressed-man-in-coat-520x245.jpg" width="100%"></a>
-              <p class="ccc-written-by">By <a class="ccc-author" href="">JOEY MACKAY</a> -- 20 Nov'14</p>
-              <a class="news-headings" href="">The weird science of first impressions</a>
+        <div class="col-xs-12 main ccc-no-margins ccc-main">
+          <div class="col-xs-12 main ccc-main2">
+            
+            <div class="col-xs-12 col-sm-8">
+              <a href=""><img src="/images/main/Square-Reader-520x245.jpg" width="100%"></a>
+              <p class="ccc-written-by">By <a class="ccc-author" href="">BEN WOODS</a> -- 20 Nov'14</p>
+              <a class="top-news" href="#">Square officially launches its Register software platform worldwide</a>
+              <p class="ccc-article-color">Square has today announced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan.  Announced at The Financial.... <a href="">Keep reading -></a></p>
             </div>
-            <p></p>
-            <div>
-              <a href=""><img src="/images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" width="100%"></a>
-              <p class="ccc-written-by">By <a class="ccc-author" href="">PAUL SAWYER</a> -- 20 Nov'14</p>
-              <a class="news-headings" href="">Adidas now lets Americans print photos on their sneakers too</a>
-            </div>
-          </div>
 
+            <div class="col-xs-12 col-sm-4">
+              <div class="ccc-sidearticle">
+                <a href=""><img src="/images/main/well-dressed-man-in-coat-520x245.jpg" width="100%"></a>
+                <p class="ccc-written-by">By <a class="ccc-author" href="">JOEY MACKAY</a> -- 20 Nov'14</p>
+                <a class="news-headings" href="">The Weird Science of First Impressions</a>
+              </div>
+              
+              <div class="ccc-sidearticle">
+                <a href=""><img src="/images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" width="100%"></a>
+                <p class="ccc-written-by">By <a class="ccc-author" href="">PAUL SAWYER</a> -- 20 Nov'14</p>
+                <a class="news-headings" href="">Adidas now lets Americans print photos on their sneakers too</a>
+              </div>
+            </div>
+
+          </div>
         </div>
-
-
-
-
-
-
-
 
       </div>
     </div>
